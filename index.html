@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOMMERCE WEBSITE</title>
+    <!-- icons-css -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- custom-css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- scroll-aniamtion-css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar start here  -->
+    <header>
+        <nav class="Navbar flex container">
+            <a href="#" class="logo" data-aos="zoom-in-up">
+                JANGID<span>'S</span>
+            </a>
+            <ul class="navlist flex" data-aos="zoom-in-up">
+                <li><a href="#home" class="link link-active">home</a></li>
+                <li><a href="#shop" class="link">shop</a></li>
+                <li><a href="#page" class="link">page</a></li>
+                <li><a href="#blog" class="link">blog</a></li>
+                <li><a href="#contact" class="link">contact</a></li>
+                <li class="nav-icons flex">
+                    <a href="#" class="icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" class="btnlogin_popup icon"><i class="fa-solid fa-user"></i></a>
+                    <a href="#" class="icon icon-active"><i class="fa-solid fa-shopping-bag"></i>
+                        <span class="quantity">0</span>
+                    </a>
+                </li>
+            </ul>
+            <a href="#" class="hamburger" data-aos="zoom-in-up"><i class="bx bx-menu"></i></a>
+        </nav>
+    </header>
+    <div class="useless"></div>
+    <!-- Navabar end here -->
+    <!-- login-page -->
+    <div class="cover_box">
+        <span class="icon_close"><i class="bx bx-x"></i></span>
+
+        <div class="form_box login">
+            <h1>Login</h1>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon-login"><i class='bx bx-envelope'></i></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><i class='bx bx-lock-alt'></i></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Dont's have an account ?<a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+        <!-- register -->
+        <div class="form_box register">
+            <h1>Register</h1>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon-login"><i class='bx bx-user'></i></span>
+                    <input type="text" required>
+                    <label for="text">Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><i class='bx bx-envelope'></i></span>
+                    <input type="email" required>
+                    <label for="Email">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-login"><i class='bx bx-lock-alt'></i></span>
+                    <input type="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label for=""><input type="checkbox">Agree to terms and conditions</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account ?<a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+
+    <!-- sections start here -->
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content  flex container" data-aos="zoom-in-up">
+                <div>
+                    <h3>Summer Fashion</h3>
+                    <h1>New Collection</h1>
+                    <h4>Big sale fo this week up to <span>30%</span></h4>
+                    <button>Shop Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="category_container container">
+                <div class="category" data-aos="zoom-in-up">
+                    <img src="for men.jpg" alt="">
+                    <button>for Men's</button>
+                </div>
+                <div class="category" data-aos="zoom-in-up">
+                    <img src="for kids.jpg" alt="">
+                    <button>for kids's</button>
+                </div>
+                <div class="category" data-aos="zoom-in-up">
+                    <img src="for accessories.jpg" alt="">
+                    <button>for accessories's</button>
+                </div>
+                <div class="category" data-aos="zoom-in-up">
+                    <img src="for women.jpg" alt="">
+                    <button>for woMen's</button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section" id="shop">
+            <div class="container">
+                <h2 data-aos="zoom-in-up">New Product</h2>
+                <div class="line" data-aos="zoom-in-up"></div>
+                <!-- cart-container -->
+                <div class="card-container" data-aos="zoom-in-up"></div>
+            </div>
+        </section>
+        <div class="container" id="container"></div>
+        <div class="cart-items-container">
+            <h2>Cart Items</h2>
+            <ul><!--cart-items--></ul>
+            <div class="bottomside">
+                <div class="total">Total<small>$</small><span>0</span></div>
+                <div class="closebtn">Close</div>
+            </div>
+        </div>
+
+
+        <section class="section">
+            <div class="sale-container" data-aos="zoom-in-up">
+                <h3>New Trend 2025</h3>
+                <h1>Wome's Collection</h1>
+                <div class="line"></div>
+                <h4>Big sale of this week</h4>
+                <button>Shop Now</button>
+            </div>
+        </section>
+
+
+        <!-- <section class="section">
+            <div class="container">
+                <h2 data-aos="zoom-in-up">Best Sale</h2>
+                <div class="line" data-aos="zoom-in-up" style="width: 150px;"></div>
+                <div class="card-container">
+                    <div class="card" data-aos="zoom-in-up">
+                        <img src="card-image5.jpg">
+                        <div class="card-content" data-aos="zoom-in-up">
+                            <p class="title">
+                                Leather Black Shoes out Edition
+                            </p>
+                            <div class="price">
+                                <del>$150.00</del>
+                                <span class="amount">$100.00</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card new" data-aos="zoom-in-up">
+                        <img src="card-image6.jpg">
+                        <div class="card-content" data-aos="zoom-in-up">
+                            <p class="title">
+                                Leather Black Shoes out Edition
+                            </p>
+                            <div class="price">
+                                <span class="amount">$100.00</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="zoom-in-up">
+                        <img src="card-image7.jpg">
+                        <div class="card-content" data-aos="zoom-in-up">
+                            <p class="title">
+                                Leather Black Shoes out Edition
+                            </p>
+                            <div class="price">
+
+                                <span class="amount">$100.00</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card sale" data-aos="zoom-in-up">
+                        <img src="card-image8.jpg">
+                        <div class="card-content" data-aos="zoom-in-up">
+                            <p class="title">
+                                Leather Black Shoes out Edition
+                            </p>
+                            <div class="price">
+                                <del>$150.00</del>
+                                <span class="amount">$100.00</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card-comtainer" data-aos="zoom-in-up">
+                    <div class="card sale" data-aos="zoom-in-up">
+                        <img src="card-image9.jpg">
+                        <div class="card-content" data-aos="zoom-in-up">
+                            <p class="title">
+                                Leather Black Shoes out Edition
+                            </p>
+                            <div class="price">
+                                <del>$150.00</del>
+                                <span class="amount">$100.00</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card new">
+                        <img src="card-image10.jpg" data-aos="zoom-in-up">
+                        <div class="card-content" data-aos="zoom-in-up">
+                            <p class="title">
+                                Leather Black Shoes out Edition
+                            </p>
+                            <div class="price">
+                                <span class="amount">$100.00</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="zoom-in-up">
+                        <img src="card-image11.jpg">
+                        <div class="card-content" data-aos="zoom-in-up">
+                            <p class="title">
+                                Leather Black Shoes out Edition
+                            </p>
+                            <div class="price">
+
+                                <span class="amount">$100.00</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="card sale" data-aos="zoom-in-up">
+                        <img src="card-image12.jpg" data-aos="zoom-in-up">
+                        <div class="card-content" data-aos="zoom-in-up">
+                            <p class="title">
+                                Leather Black Shoes out Edition
+                            </p>
+                            <div class="price">
+                                <del>$150.00</del>
+                                <span class="amount">$100.00</span>
+                            </div>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section> -->
+
+        <section class="section" id="page">
+            <div class="secondry-bg">
+                <div class="container flex wrap">
+                    <div class="box" data-aos="zoom-in-up">
+                        <i class="fa-solid fa-truck"></i>
+                        <h5>
+                            <a href="#">Free Shipping</a>
+                        </h5>
+                        <p class="des">Free shipping on order over $99</p>
+                    </div>
+                    <div class="box" data-aos="zoom-in-up">
+                        <i class="fa-solid fa-money-bill-1"></i>
+                        <h5>
+                            <a href="#">Cash On Delivery</a>
+                        </h5>
+                        <p class="des">The internet trend To Repeat</p>
+                    </div>
+                    <div class="box" data-aos="zoom-in-up">
+                        <i class="fa-solid fa-gift"></i>
+                        <h5>
+                            <a href="#">Gift For All</a>
+                        </h5>
+                        <p class="des">Recive Gift When Subscribe</p>
+                    </div>
+                    <div class="box" data-aos="zoom-in-up">
+                        <i class="fa-solid fa-clock"></i>
+                        <h5>
+                            <a href="#">Open All Week </a>
+                        </h5>
+                        <p class="des">6.00 am - 17.00 pm </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section" id="blog">
+            <div class="container">
+                <h2 data-aos="zoom-in-up">New Latest</h2>
+                <div data-aos="zoom-in-up" class="line"></div>
+
+                <div class="blog-container flex wrap">
+                    <div class="blog-box" data-aos="zoom-in-up">
+                        <img src="news-image1.jpg">
+                        <div class="blog-content">
+                            <h3 class="heading">
+                                <a href="#"> New Trend 2025</a>
+                            </h3>
+                            <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eos
+                                ipsam nostrum placeat! Sequi, voluptates.</p>
+                            <a href="#" class="blog-link">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="blog-box" data-aos="zoom-in-up">
+                        <img src="news-image2.jpg">
+                        <div class="blog-content">
+                            <h3 class="heading">
+                                <a href="#"> New Trend 2025</a>
+                            </h3>
+                            <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eos
+                                ipsam nostrum placeat! Sequi, voluptates.</p>
+                            <a href="#" class="blog-link">Read More</a>
+                        </div>
+                    </div>
+
+                    <div class="blog-box" data-aos="zoom-in-up">
+                        <img src="news-image3.jpg">
+                        <div class="blog-content">
+                            <h3 class="heading">
+                                <a href="#"> New Trend 2025</a>
+                            </h3>
+                            <p class="des">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio eos
+                                ipsam nostrum placeat! Sequi, voluptates.</p>
+                            <a href="#" class="blog-link">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="section" id="contact">
+            <div class="secondry-bg">
+                <form class="container flex" data-aos="zoom-in-up">
+                    <h3>Sign up for Send Newsletter</h3>
+
+                    <div class="input-container flex">
+                        <input type="email" name="email" id="email" placeholder="Your Email" autocomplete="off">
+                        <button>Subscribe</button>
+                    </div>
+
+                    <div class="social-icons" data-aos="zoom-in-up">
+                        <a href="#" class="media">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="media">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#" class="media">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                        <a href="#" class="media">
+                            <i class="fa-brands fa-behance"></i>
+                        </a>
+                        <a href="#" class="media">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- sections End here -->
+
+
+
+    <!-- footer start here -->
+    <footer class="section">
+        <div class="footer-container container flex wrap" data-aos="zoom-in-up">
+            <ul class="footer-list" data-aos="zoom-in-up">
+                <li>
+                    <a href="#" class="footer-ink">About Us</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-ink">Online Store</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-ink">Blog</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-ink">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="footer-list" data-aos="zoom-in-up">
+                <li>
+                    <a href="#" class="footer-ink">Login / Register</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-ink">Your Cart</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-ink">Wishlist Items</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-ink">Your checkout</a>
+                </li>
+            </ul>
+            <ul class="footer-list" data-aos="zoom-in-up">
+                <li>
+                    <a href="#" class="footer-ink">FAQs</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-ink">Term Of Services</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-ink">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-ink">Returns</a>
+                </li>
+            </ul>
+            <ul class="footer-list" data-aos="zoom-in-up">
+                <li class="footer-logo">
+                    <a href="#" class="logo">
+                        JANGID<span>'S</span>
+                    </a>
+                </li>
+                <li>
+                    <p class="detail">ABC City, XYZ Road</p>
+                </li>
+                <li>
+                    <p class="detail">govind's@gmail.com</p>
+                </li>
+                <li>
+                    <p class="detail">+91 1441-433823-3283</p>
+                </li>
+            </ul>
+
+
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2025 <a href="#" class="footer-ink">Govind's </a></p>
+        </div>
+    </footer>
+    <!-- footer end here -->
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+        });
+    </script>
+</body>
+
+</html>
